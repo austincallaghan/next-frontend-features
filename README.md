@@ -1,6 +1,6 @@
-# Simple Svelte App
+# Next Frontend Features
 
-This repo is a template SvelteKit app that provides useful features that are ready to use with minimal configuration required.
+This repo provides a playground to test new features.
 
 ## Install requirements
 
