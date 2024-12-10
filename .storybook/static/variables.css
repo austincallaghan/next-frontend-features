@@ -1,0 +1,6 @@
+@import './fonts.css';
+
+:root {
+  --font-primary: Hind;
+  --font-secondary: Nunito;
+}

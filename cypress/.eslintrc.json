@@ -1,0 +1,14 @@
+{
+  "plugins": ["cypress"],
+  "env": {
+    "cypress/globals": true
+  },
+  "overrides": [
+    {
+      "files": ["./support/**/*.d.ts"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    }
+  ]
+}

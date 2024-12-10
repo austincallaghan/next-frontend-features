@@ -1,0 +1,5 @@
+{
+  "watch": ["cypress"],
+  "ext": "js",
+  "exec": "node ./cypress/server/index"
+}
