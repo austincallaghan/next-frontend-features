@@ -19,7 +19,7 @@
 
   .primary {
     background-color: #007bff; /* Blue */
-    color: white;
+    color: black;
   }
 
   .primary:hover {

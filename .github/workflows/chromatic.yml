@@ -1,24 +1,54 @@
-name: 'Chromatic'
+# name: 'Chromatic'
 
-on: push
+# on: push
+
+# jobs:
+#   chromatic:
+#     name: Run Chromatic
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
+#         with:
+#           fetch-depth: 0
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version-file: 'package.json'
+#       - name: Install dependencies
+#         # Install dependencies using Yarn in a CI environment
+#         run: yarn install --frozen-lockfile
+#       - name: Run Chromatic
+#         uses: chromaui/action@latest
+#         with:
+#           # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
+#           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+
+#       npx chromatic --project-token=chpt_e24ed656274b092 --patch-build=create-initial-chromatic-demo-components...main
+name: Chromatic Patch Build
+
+on:
+  pull_request:
+    branches:
+      - main # Adjust if needed
 
 jobs:
   chromatic:
-    name: Run Chromatic
+    name: Run Chromatic Patch Build
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v3
+          fetch-depth: 0 # Fetch full git history for Chromatic patch builds
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version-file: 'package.json'
-      - name: Install dependencies
-        # Install dependencies using Yarn in a CI environment
-        run: yarn install --frozen-lockfile
-      - name: Run Chromatic
-        uses: chromaui/action@latest
-        with:
-          # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          node-version: 20.10.0 # Adjust if needed
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Run Chromatic Patch Build
+        run: npx chromatic --project-token=chpt_e24ed656274b092 --patch-build=${{ github.head_ref }}...main
