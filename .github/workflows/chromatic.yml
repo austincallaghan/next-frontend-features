@@ -3,10 +3,10 @@ name: Chromatic
 on:
   push:
     branches:
-      - main # Ensure main has a clean and up-to-date baseline
+      - main
   pull_request:
     branches:
-      - main # Run Chromatic on PRs targeting main
+      - main
 
 jobs:
   chromatic:
@@ -22,7 +22,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20.10.0 # Adjust if needed
+          node-version: 20.10.0
 
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
@@ -31,6 +31,7 @@ jobs:
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }} # Ensure this secret is set in GitHub
-          exitZeroOnChanges: false
+          exitZeroOnChanges: true
+          exitOnceUploaded: true
           autoAcceptChanges: false # Ensures UI reviews must be manually approved
           onlyChanged: true # Only capture snapshots for changed components

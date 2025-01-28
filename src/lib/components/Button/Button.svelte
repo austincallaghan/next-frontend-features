@@ -18,7 +18,7 @@
   }
 
   .primary {
-    background-color: #007bff; /* Blue */
+    background-color: tomato; /* Blue */
     color: black;
   }
 
