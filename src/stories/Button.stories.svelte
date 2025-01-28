@@ -3,9 +3,14 @@
   import Button from '../lib/components/Button/Button.svelte';
 
   const { Story } = defineMeta({
-    title: 'Button',
+    title: 'Chromatic/Button',
     component: Button,
   });
 </script>
 
-<Story name="Primary" />
+<Story name="Primary">
+  <Button>Primary Button</Button>
+</Story>
+<Story name="Secondary">
+  <Button variant="secondary">Secondary Button</Button>
+</Story>

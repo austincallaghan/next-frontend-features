@@ -1,0 +1,36 @@
+name: Chromatic
+
+on:
+  push:
+    branches:
+      - main # Ensure main has a clean and up-to-date baseline
+  pull_request:
+    branches:
+      - main # Run Chromatic on PRs targeting main
+
+jobs:
+  chromatic:
+    name: Run Chromatic UI Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch full git history for Chromatic patch builds
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.10.0 # Adjust if needed
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }} # Ensure this secret is set in GitHub
+          exitZeroOnChanges: false
+          autoAcceptChanges: false # Ensures UI reviews must be manually approved
+          onlyChanged: true # Only capture snapshots for changed components
