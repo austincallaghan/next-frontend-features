@@ -1,13 +1,16 @@
 name: Chromatic
 
 on:
+  push:
+    branches:
+      - main # Ensure main has a clean and up-to-date baseline
   pull_request:
     branches:
-      - main # Adjust if needed
+      - main # Run Chromatic on PRs targeting main
 
 jobs:
   chromatic:
-    name: Run Chromatic Patch Build
+    name: Run Chromatic UI Tests
     runs-on: ubuntu-latest
 
     steps:
@@ -28,3 +31,6 @@ jobs:
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }} # Ensure this secret is set in GitHub
+          exitZeroOnChanges: false
+          autoAcceptChanges: false # Ensures UI reviews must be manually approved
+          onlyChanged: true # Only capture snapshots for changed components
