@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400px" height="400px" viewBox="0 0 400 400" fill="none">
   <path
     d="M156.742 73.3269C163.153 60.4741 171.303 50.3291 185.623 45.9472C265.623 21.4721 265.535 157.679 189.904 150.841C172.153 149.238 154.313 133.339 152.714 117.401C151.927 109.571 152.609 101.066 153.383 93.3615"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -9,7 +9,7 @@
   />
   <path
     d="M133.059 105.661C106.347 119.228 103.315 185.922 109.226 227.132"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -17,7 +17,7 @@
   />
   <path
     d="M260.142 105.661C286.442 115.349 300.213 184.124 291.285 227.132"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -25,7 +25,7 @@
   />
   <path
     d="M153.526 233.004C144.571 221.356 145.054 199.115 149.033 172.638M245.772 164.161C251.326 189.186 250.454 217.726 241.41 230.135L245.772 164.161Z"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -33,7 +33,7 @@
   />
   <path
     d="M157.208 248.929C156.715 283.572 149.942 317.5 149.942 351.862"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -41,7 +41,7 @@
   />
   <path
     d="M199.475 259.828C200.042 292.459 198.382 324.843 198.382 356.706"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -49,7 +49,7 @@
   />
   <path
     d="M238.008 245.296C240.958 280.341 241.103 315.445 241.103 350.651"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -57,7 +57,7 @@
   />
   <path
     d="M225.023 349.49C225.023 350.265 225.023 351.035 225.023 351.81"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -65,7 +65,7 @@
   />
   <path
     d="M210.05 349.44C209.537 351.46 209.018 353.475 208.505 355.495"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -73,7 +73,7 @@
   />
   <path
     d="M179.584 352.352C178.986 353.398 178.811 354.929 178.424 356.217"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -81,7 +81,7 @@
   />
   <path
     d="M161.125 352.74C161.793 353.989 160.611 354.803 160.354 355.83"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -89,7 +89,7 @@
   />
   <path
     d="M277.424 228.343C279.962 230.818 276.281 232.833 275.879 234.398"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -97,7 +97,7 @@
   />
   <path
     d="M260.91 232.853C260.397 233.88 259.884 234.912 259.365 235.944"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -105,7 +105,7 @@
   />
   <path
     d="M124.897 225.921C124.463 227.928 124.354 229.965 124.124 231.976"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -113,7 +113,7 @@
   />
   <path
     d="M141.053 225.921C140.837 227.527 140.782 229.156 140.667 230.765"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -121,7 +121,7 @@
   />
   <path
     d="M212.913 89.0808C202.203 89.7613 191.615 91.1592 181.428 92.7137"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -129,7 +129,7 @@
   />
   <path
     d="M207.097 96.3467C207.986 94.1091 206.581 93.116 206.324 91.5028"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -137,7 +137,7 @@
   />
   <path
     d="M188.694 98.1545C188.694 96.6407 188.694 94.8425 188.694 93.3287"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -145,7 +145,7 @@
   />
   <path
     d="M153.981 58.7023C152.59 57.4235 153.467 55.6119 153.205 54.0667"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
@@ -153,7 +153,7 @@
   />
   <path
     d="M243.623 63.5461C244.655 62.1898 244.65 60.4557 245.168 58.9105"
-    stroke="blue"
+    stroke="cyan"
     stroke-opacity="0.9"
     stroke-width="16"
     stroke-linecap="round"
